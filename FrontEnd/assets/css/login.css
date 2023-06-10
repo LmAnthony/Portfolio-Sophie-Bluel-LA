@@ -1,0 +1,84 @@
+/* ******************* PAGE LOGIN.HTML ******************* */
+/* Style du formulaire dans login.html */
+.login-form label {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: start;
+	display: flex;
+	color: #3D3D3D;
+	margin-bottom: 13px;
+
+}
+.login-form input {
+	width: 379px;
+	height: 51px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+/* Style du button dans mon formulaire */
+.login-form button {
+	width: 179px;
+	margin-left: 94px;
+	margin-top: 35px;
+	background: #1D6154;
+	border-radius: 60px;
+	font-family: 'Syne';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 10px 0 10px 0;
+}
+.login-form button:hover, .envoyerBtn:hover{
+	background-color: #0E2F28;
+}
+/* Re-style des balises cliquable */
+.login-form a {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration-line: underline;
+	color: #3D3D3D;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 80px;
+}
+/* Re-marge du text "Mot de passe oublié" */
+.login-form a:last-child {
+	margin-left: 0;
+}
+/* Re-style de la nav  */
+.nav_li {
+	text-decoration: none;
+	color: #000000;
+}
+.bold:hover{
+	font-weight: bold;
+	color: black;
+}
+.nav_li a:visited {
+	font-weight: bold;
+}
+/* Position du formulaire au centre */
+.form-login-style {
+	width: 360px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+/* Postion du footer dans login.html se positionne tout en bas de la page. */
+.footerDOWN{
+	width: 95%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}

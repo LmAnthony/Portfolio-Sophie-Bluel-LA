@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+	<header>
+		<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="nav_li bold">projets</a></li>
+				<li><a href="#contact" class="nav_li">contact </a></li>
+				<li ><a href="login.html" class="nav_li">login</a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="introduction">
+            <div id="contact" class="form-login-style">
+                <h2>LOG IN</h2>
+                <div class="form">
+                    <!-- Formulaire en méthode POST -->
+                    <form class="login-form" id="login-form" enctype='multipart/form-data' method="post">
+                            <!-- Text EMAIL et l'input de l'email -->
+                            <div>
+                                <label>Email</label>
+                                <input type="Email" id="email" />
+                            </div>
+                            <!-- Text MDP et l'input du password -->
+                            <div>
+                                <label>Mot de passe</label>
+                                <input type="password" id="password"/>
+                            </div>
+							<!-- Message d'erreur de login! -->
+							<span id="error_login"></span>
+                            <!-- Bouton de validation pour se connecter -->
+                            <div>
+                                <button id="BtnSubmitLogin" type="button">se connecter</button>
+                            </div>
+                            <!-- Mot de passe oublié -->
+                            <div><a href="#">Mot de passe oublié</a></div>
+                    </form>
+                </div>
+            </div>
+	    </section>
+	</main>
+	<footer class="footerDOWN">
+		<nav>
+			<ul><li>Mentions Légales</li></ul>
+		</nav>
+	</footer>
+</body>
+<script src="assets/javascript/login.js"></script>
+</html>

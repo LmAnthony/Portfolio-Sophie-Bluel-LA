@@ -1,0 +1,359 @@
+body{
+    background: #FFFEF8;
+}
+.blackBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 5em;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+}
+.blackBar i, .blackBar p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    margin-left: 1em;
+}
+.blackBar span{
+    background: #FFFFFF;
+    border-radius: 60px;
+    margin-left: 1.5em;
+    padding: 1em 1em 1em 0;
+}
+.blackBar span p{
+    color: black;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+.blackBar img{
+    width: 1.7em;
+}
+/* BOUTON D'EDIT POUR MODIFIER LA GALLERIE */
+.portfolioHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+#portfolio h2{
+    margin-bottom: 0;
+}
+/* Edit_style permet de positionner et stylé l'icon edit et le texte modifier */
+.Edit_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 32px;
+}
+.Edit_style:hover{
+    transform: scale(1.05);
+}
+.Edit_style img{
+    width: 1.8em;
+    margin-right: 0.5em;
+}
+.Edit_style p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+/* Style du bouton 'modifier' */
+.btnEdit_style{
+    border: none;
+    background-color: #FFFEF8;
+}
+
+/* >>>>> ON CACHE LES FILTRES (PAS BESOIN SUR LA PAGE EDITMAINPAGE.HTML <<<<<< */
+.btn-center{
+    display: none;
+}
+
+/*  Style pour les deux MODAL. (background) ##################### */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 25px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modification couleur, taille, positionnement du contenu des modals */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    height: 90%;
+    position: relative;
+  }
+  /* MESSAGES D'ERREUR OU D'ALERTE */
+  #alert, #message_alert{
+    text-align: center;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }
+#alert{
+  color: green;
+}
+#message_alert{
+    color: rgb(255, 0, 0);
+}
+  
+  /* Icon pour fermer la modal (croix) */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  /* Style de l'icon pour fermer la modal */
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* >>>>>>>> GALLERIE DE LA MODAL <<<<<<< */
+.galleryModalStyle{
+    width: 75%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.galleryModal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+
+}
+/* Figure qui contient l'image, le texte (figcaption) et l'icon poubelle. */
+.galleryModal figure {
+    position: relative;
+	width: 18%;
+}
+.galleryModal img {
+	width: 100%;
+}
+/* Texte en dessous de l'image */
+.galleryModal figcaption {
+	font-size: 14px;
+}
+/* Icon poubelle */
+.galleryModal .fa-trash-can{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 10px;
+    color: white;
+    background: black;
+    border-radius: 2px;
+    padding: 0.5em;
+}
+/* Titre des modals. */
+.modal-content h2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 1em;
+}
+/* Boutons de fin de la première modal */
+.btnModalStyle{
+    display: flex;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	grid-row-gap: 20px;
+}
+.btnModalStyle button{
+    border: none;
+    background: #1D6154;
+    border-radius: 60px;
+    color: white;
+    padding: 13px 50px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+/* Texte du bouton */
+.btnModalStyle p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #D65353;
+}
+/* ##################### Seconde MODAL pour ajouter un projet ##################### */
+.title{
+    margin-top: 2em;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+/* Second formulaire pour créer un nouveau projet */
+#formNewWork{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-top: 0.5em;
+}
+/* Premier label (file) du formulaire */
+#formNewWork label:first-child{
+    margin-top: 1em;
+}
+/* Bouton retour en arrière pour revenir à la modal précédante (la flèche en haut à gauche) */
+.return{
+    font-size: 2em;
+}
+/* Style de l'input type file avec (fake image), input type file et un texte pour indiquer le format du fichier */
+.file{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    background: #E8F1F7;
+    border-radius: 3px;
+    padding: 3em 0 3em 0;
+    position: relative;
+}
+/* Fake image */
+.file img{
+    width: 18%;
+    margin-bottom: 1em;
+}
+/* L'image que pose l'utilisateur */
+#UserImgFile{
+    background-position: center;
+    width: 37.5%;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+}
+/* On cache l'input type file afin de le stylisé */
+.file input[type="file"] {
+    display: none;
+}
+/* Style de "l'input type file" transformer en bouton plus agréable. */
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #CBD6DC;
+    border-radius: 50px;
+    padding: 0.7em 2em 0.7em 2em;
+    color: #306685;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+/* Texte format du fichier utilisateur */
+.fichier_autorise{
+    margin-top: 0.5em;
+    font-size: 12px;
+}
+/* Entière parti où se trouve l'input type text et le select */
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+/* Style input type text et le select */
+.input input, .input select{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+}
+/* Input type text */
+.input input{
+    margin-bottom: 2em;
+}
+select#categoryOptions {
+    appearance: none;
+    background-image:
+      linear-gradient(45deg, transparent 50%, black 50%),
+      linear-gradient(135deg, black 50%, transparent 50%);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+  }
+/* DIV du bouton de validation (positionnement) */
+.actionBtnValid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Style du bouton de validation */
+.btnValid_style{
+    border: none;
+    background: #A7A7A7;
+    border-radius: 60px;
+    color: white;
+    padding: 10px 100px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 1.5em;
+}
+/* Les <hr> qui permet de créer une ligne de séparation simple. */
+.ligne{
+    width: 75%;
+    margin-bottom: 2em;
+}
+.ligne2{
+    width: 100%;
+}
